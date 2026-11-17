@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=240&section=header&text=NeuroSense-X&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=AI-Assisted%20Cranial%20Mechanical%20Vibration%20Analysis%20Platform&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="NeuroSense-X banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=240&section=header&text=NeuroSense-X by Katikireddy Tharun &fontSize=68&fontColor=ffffff&fontAlignY=36&desc=AI-Assisted%20Cranial%20Mechanical%20Vibration%20Analysis%20Platform&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="NeuroSense-X banner"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=640&lines=Acquire.+Process.+Analyse.+Visualize.;ESP32+%C2%B7+MEMS+Sensing+%C2%B7+Web+Serial+API;Engineering+%C2%B7+Measurement+%C2%B7+Signal+Intelligence" alt="Typing animation"/>
