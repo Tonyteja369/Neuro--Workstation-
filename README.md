@@ -21,7 +21,7 @@
 
 <br/>
 
-## 🔬 About
+##  About
 
 **NeuroSense-X** is an experimental biomedical instrumentation and signal-analysis platform that **acquires, processes, analyses and visualizes mechanical vibration measurements across multiple cranial positions**.
 
@@ -29,26 +29,26 @@ It unites four layers in one workflow:
 
 | | Layer | What it does |
 |:-:|---|---|
-| 🔌 | **Embedded** | ESP32 firmware talking to MEMS sensors over I²C |
-| 📡 | **Acquisition** | Multi-sensor streaming through serial communication |
-| 📈 | **Processing** | Digital signal processing and frequency-domain analysis |
-| 🖥️ | **Visualization** | Interactive, real-time web dashboard and reporting |
+|  | **Embedded** | ESP32 firmware talking to MEMS sensors over I²C |
+| | **Acquisition** | Multi-sensor streaming through serial communication |
+|  | **Processing** | Digital signal processing and frequency-domain analysis |
+|  | **Visualization** | Interactive, real-time web dashboard and reporting |
 
 <br/>
 
-## ✨ Core Features
+##  Core Features
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🔵 Hardware Connectivity
+###  Hardware Connectivity
 ESP32 integration, MEMS sensor communication and serial data acquisition.
 
 </td>
 <td width="50%" valign="top">
 
-### 🟢 Live Monitoring
+###  Live Monitoring
 Real-time three-axis acceleration measurements and sensor visualization.
 
 </td>
@@ -56,13 +56,13 @@ Real-time three-axis acceleration measurements and sensor visualization.
 <tr>
 <td width="50%" valign="top">
 
-### 🟣 Signal Processing
+###  Signal Processing
 Baseline removal, filtering, RMS calculations and FFT analysis.
 
 </td>
 <td width="50%" valign="top">
 
-### 🟠 Frequency Analysis
+###  Frequency Analysis
 Frequency spectrum visualization and experimental resonance analysis.
 
 </td>
@@ -70,13 +70,13 @@ Frequency spectrum visualization and experimental resonance analysis.
 <tr>
 <td width="50%" valign="top">
 
-### 🔴 Sensor Comparison
+### Sensor Comparison
 Comparative acceleration analysis across multiple measurement positions.
 
 </td>
 <td width="50%" valign="top">
 
-### ⚫ Reporting
+###  Reporting
 Experimental data visualization, analysis summaries and reporting.
 
 </td>
@@ -85,18 +85,18 @@ Experimental data visualization, analysis summaries and reporting.
 
 <br/>
 
-## ⚙️ System Architecture
+##  System Architecture
 
 ```mermaid
 flowchart TD
-    A["🔊 Bone-Conduction Transducer"] --> B["〰️ Mechanical Excitation"]
-    B --> C["📟 MEMS Accelerometer Sensors"]
-    C --> D["🔀 TCA9548A I²C Multiplexer"]
-    D --> E["🧠 ESP32 Microcontroller"]
-    E --> F["🔌 Serial Communication"]
-    F --> G["🖥️ NeuroSense-X Web Application"]
-    G --> H["📈 Signal Processing & Analysis"]
-    H --> I["📊 Visualization & Reporting"]
+    A[" Bone-Conduction Transducer"] --> B["〰️ Mechanical Excitation"]
+    B --> C[" MEMS Accelerometer Sensors"]
+    C --> D[" TCA9548A I²C Multiplexer"]
+    D --> E[" ESP32 Microcontroller"]
+    E --> F[" Serial Communication"]
+    F --> G[" NeuroSense-X Web Application"]
+    G --> H[" Signal Processing & Analysis"]
+    H --> I[" Visualization & Reporting"]
 
     classDef hw fill:#0E7490,stroke:#22D3EE,color:#fff,stroke-width:2px;
     classDef mcu fill:#0F766E,stroke:#2DD4BF,color:#fff,stroke-width:2px;
@@ -108,7 +108,7 @@ flowchart TD
 
 <br/>
 
-## 🔧 Hardware
+##  Hardware
 
 | Component | Function |
 |---|---|
@@ -118,7 +118,7 @@ flowchart TD
 | **Bone-Conduction Transducer** | Mechanical excitation |
 | **PAM8403** | Audio amplification |
 
-### 📍 Sensor Configuration
+###  Sensor Configuration
 
 | Sensor | Measurement Position | Multiplexer Channel |
 |:-:|---|:-:|
@@ -128,7 +128,7 @@ flowchart TD
 
 <br/>
 
-## 📊 Signal Processing & Methods
+##  Signal Processing & Methods
 
 | Method | Application |
 |---|---|
@@ -207,7 +207,7 @@ timestamp_us,sensor_id,ax_g,ay_g,az_g
 
 <br/>
 
-## ⚠️ Experimental Limitations
+## Experimental Limitations
 
 > [!IMPORTANT]
 > The current prototype uses an **MPU6050-based acquisition architecture** with a **nominal 100 Hz sampling target**. At that rate the theoretical **Nyquist frequency is 50 Hz**.
@@ -223,7 +223,7 @@ timestamp_us,sensor_id,ax_g,ay_g,az_g
 
 <br/>
 
-## 🔭 Roadmap
+##  Roadmap
 
 - [ ] Higher-bandwidth vibration acquisition
 - [ ] Synchronized multi-channel sensor measurements
