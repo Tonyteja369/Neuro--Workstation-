@@ -1,101 +1,297 @@
-<div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=240&section=header&text=NeuroSense-X&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=AI-Assisted%20Cranial%20Mechanical%20Vibration%20Analysis%20Platform&descSize=17&descAlignY=58&animation=fadeIn" width="100%" alt="NeuroSense-X banner"/> <a href="https://git.io/typing-svg"> <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=17&duration=3200&pause=900&color=22D3EE&center=true&vCenter=true&width=640&lines=Acquire.+Process.+Analyse.+Visualize.;ESP32+%C2%B7+MEMS+Sensing+%C2%B7+Web+Serial+API;Engineering+%C2%B7+Measurement+%C2%B7+Signal+Intelligence" alt="Typing animation"/> </a> <br/> <img src="https://img.shields.io/badge/Domain-Biomedical%20Engineering-0E7490?style=for-the-badge&labelColor=0B1220"> <img src="https://img.shields.io/badge/Platform-Web%20Application-2563EB?style=for-the-badge&labelColor=0B1220"> <img src="https://img.shields.io/badge/Hardware-ESP32-00979D?style=for-the-badge&logo=espressif&logoColor=white&labelColor=0B1220"> <img src="https://img.shields.io/badge/Status-Experimental-F97316?style=for-the-badge&labelColor=0B1220">
+<div align="center">
+
+<img src="./assets/banner.svg" width="100%" alt="NeuroSense-X — AI-Assisted Cranial Mechanical Vibration Analysis Platform"/>
+
+<br/>
+
+<img src="https://img.shields.io/badge/DOMAIN-BIOMEDICAL%20ENGINEERING-0E7490?style=for-the-badge&labelColor=0B1220">
+<img src="https://img.shields.io/badge/FOCUS-SIGNAL%20INTELLIGENCE-8B5CF6?style=for-the-badge&labelColor=0B1220">
+<img src="https://img.shields.io/badge/PLATFORM-WEB%20APPLICATION-2563EB?style=for-the-badge&labelColor=0B1220">
+<img src="https://img.shields.io/badge/STATUS-EXPERIMENTAL-F97316?style=for-the-badge&labelColor=0B1220">
 
 <br/><br/>
 
-About · Features · Architecture · Hardware · Signal Processing · Quick Start · Serial Protocol · Limitations · Roadmap · Insights · Credits
+<img src="https://img.shields.io/badge/React-0B1220?style=flat-square&logo=react&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/TypeScript-0B1220?style=flat-square&logo=typescript&logoColor=3178C6">
+<img src="https://img.shields.io/badge/Vite-0B1220?style=flat-square&logo=vite&logoColor=646CFF">
+<img src="https://img.shields.io/badge/Tailwind_CSS-0B1220?style=flat-square&logo=tailwindcss&logoColor=06B6D4">
+<img src="https://img.shields.io/badge/ESP32-0B1220?style=flat-square&logo=espressif&logoColor=E7352C">
+<img src="https://img.shields.io/badge/Arduino-0B1220?style=flat-square&logo=arduino&logoColor=00979D">
+<img src="https://img.shields.io/badge/Web_Serial_API-0B1220?style=flat-square&logo=googlechrome&logoColor=4285F4">
 
-</div> <br/> <div align="center">
-👤 Conceived, Designed & Built by Katikireddy Tharun
-<a href="https://github.com/Tonyteja369"> <img src="https://img.shields.io/badge/Founder%20%26%20Sole%20Owner-Katikireddy%20Tharun-0E7490?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1220"> </a> <img src="https://img.shields.io/badge/Idea%20%26%20Research-Katikireddy%20Tharun-7C3AED?style=for-the-badge&labelColor=0B1220"> <img src="https://img.shields.io/badge/Hardware%20%26%20Firmware-Katikireddy%20Tharun-00979D?style=for-the-badge&labelColor=0B1220"> <img src="https://img.shields.io/badge/Software%20%26%20Analysis-Katikireddy%20Tharun-2563EB?style=for-the-badge&labelColor=0B1220"> </div> <br/>
-🔬 About
+<br/><br/>
 
-NeuroSense-X is an experimental biomedical instrumentation and signal-analysis platform that acquires, processes, analyses and visualizes mechanical vibration measurements across multiple cranial positions.
+**[Welcome](#-welcome) · [Capabilities](#-capabilities) · [Statistics](#-project-statistics) · [Stack](#-technology-stack) · [Architecture](#%EF%B8%8F-system-architecture) · [Methods](#-mathematical-methods) · [Hardware](#-hardware-configuration) · [Screenshots](#-screenshots) · [Install](#-installation) · [Limitations](#%EF%B8%8F-limitations--disclaimer)**
 
-It unites four layers in one workflow:
+</div>
 
-	Layer	What it does
-🔌	Embedded	ESP32 firmware talking to MEMS sensors over I²C
-📡	Acquisition	Multi-sensor streaming through serial communication
-📈	Processing	Digital signal processing and frequency-domain analysis
-🖥️	Visualization	Interactive, real-time web dashboard and reporting
 <br/>
-✨ Core Features
-<table> <tr> <td width="50%" valign="top">
-🔵 Hardware Connectivity
 
-ESP32 integration, MEMS sensor communication and serial data acquisition.
+## 🧬 Welcome
 
-</td> <td width="50%" valign="top">
-🟢 Live Monitoring
+<div align="center">
 
-Real-time three-axis acceleration measurements and sensor visualization.
+**NeuroSense-X** is an experimental biomedical instrumentation and signal-analysis platform that acquires, processes, analyses and visualizes **mechanical vibration measurements across multiple cranial positions** — from bone-conduction excitation to MEMS sensing, embedded acquisition and an interactive web dashboard.
 
-</td> </tr> <tr> <td width="50%" valign="top">
-🟣 Signal Processing
-
-Baseline removal, filtering, RMS calculations and FFT analysis.
-
-</td> <td width="50%" valign="top">
-🟠 Frequency Analysis
-
-Frequency spectrum visualization and experimental resonance analysis.
-
-</td> </tr> <tr> <td width="50%" valign="top">
-🔴 Sensor Comparison
-
-Comparative acceleration analysis across multiple measurement positions.
-
-</td> <td width="50%" valign="top">
-⚫ Reporting
-
-Experimental data visualization, analysis summaries and reporting.
-
-</td> </tr> </table> <br/>
-⚙️ System Architecture
-🔊 Bone-ConductionTransducer
-〰️ Mechanical Excitation
-📟 MEMS AccelerometerSensors
-🔀 TCA9548A I²CMultiplexer
-🧠 ESP32 Microcontroller
-🔌 Serial Communication
-🖥️ NeuroSense-X WebApplication
-📈 Signal Processing &Analysis
-📊 Visualization &Reporting
 <br/>
-🔧 Hardware
-Component	Function
-ESP32-WROOM-32	Microcontroller
-MPU6050	Three-axis accelerometer and gyroscope
-TCA9548A	I²C multiplexer
-Bone-Conduction Transducer	Mechanical excitation
-PAM8403	Audio amplification
-📍 Sensor Configuration
-Sensor	Measurement Position	Multiplexer Channel
-S1	Left Temporal	0
-S2	Right Temporal	1
-S3	Frontal Midline	2
-<br/>
-📊 Signal Processing & Methods
-Method	Application
-RMS	Effective acceleration magnitude
-FFT	Frequency-domain transformation
-Mean	Average signal measurement
-Peak Amplitude	Maximum signal magnitude
-Peak-to-Peak	Total signal excursion
-Filtering	Noise and unwanted frequency suppression
-Resonance	Investigation of mechanical response peaks
-Damping	Vibration decay characterization
-Attenuation	Input-output amplitude comparison
-Transfer Function	Frequency-dependent input-output relationship
-SNR	Signal quality assessment
-<br/>
-💻 Technology Stack
-<div align="center"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white"> <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white"> <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"> <img src="https://img.shields.io/badge/ESP32-00979D?style=for-the-badge&logo=espressif&logoColor=white"> <img src="https://img.shields.io/badge/Web_Serial_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white"> </div> <br/>
-🚀 Quick Start
 
-Prerequisites: Node.js, npm and Git.
+<table>
+<tr>
+<td align="center" width="900">
+<img src="https://img.shields.io/badge/MISSION-0E7490?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<b>Turn raw cranial vibration into measurable, comparable and reportable signal data<br/>through transparent, open and honestly-scoped engineering.</b>
+</td>
+</tr>
+</table>
 
-bash
+<br/>
+
+<img src="https://img.shields.io/badge/Conceived%20%26%20Built%20by-Katikireddy%20Tharun-0E7490?style=for-the-badge&logo=github&logoColor=white&labelColor=0B1220">
+
+</div>
+
+<br/>
+
+## ✨ Capabilities
+
+<table align="center" width="100%">
+<tr>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/01-HARDWARE%20INTEGRATION-14B8A6?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>ESP32 integration, MEMS sensor communication and serial data acquisition.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/02-REAL--TIME%20ACQUISITION-22D3EE?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Real-time three-axis acceleration measurements and live sensor visualization.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/03-SIGNAL%20PROCESSING-8B5CF6?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Baseline removal, filtering and signal-quality assessment.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/04-RMS%20ANALYSIS-22C55E?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Effective acceleration magnitude calculated per measurement.</sub>
+</td>
+</tr>
+<tr>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/05-FFT%20ANALYSIS-2563EB?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Frequency-domain transformation and spectrum visualization.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/06-RESONANCE%20ANALYSIS-A855F7?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Experimental investigation of mechanical response peaks.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/07-VIBRATION%20MAPPING-0EA5E9?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Comparative acceleration analysis across three cranial positions.</sub>
+</td>
+<td width="25%" valign="top" align="center">
+<img src="https://img.shields.io/badge/08-EXPERIMENTAL%20REPORTING-64748B?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<sub>Data visualization, analysis summaries and reporting.</sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 📊 Project Statistics
+
+> Every figure below is taken directly from the project's own configuration — nothing is estimated.
+
+<table align="center" width="100%">
+<tr>
+<td width="33%" valign="top" align="center">
+<img src="https://img.shields.io/badge/PROJECT-INFORMATION-0E7490?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<img src="https://img.shields.io/badge/Domain-Biomedical%20Engineering-0E7490?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Type-Web%20Application-2563EB?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Status-Experimental-F97316?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Sensors-3-22C55E?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Baud%20Rate-115200-8B5CF6?style=flat-square&labelColor=0B1220">
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://img.shields.io/badge/TECHNOLOGY-STACK-2563EB?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<img src="https://img.shields.io/badge/Frontend-React-61DAFB?style=flat-square&logo=react&logoColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Language-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"><br/>
+<img src="https://img.shields.io/badge/Build-Vite-646CFF?style=flat-square&logo=vite&logoColor=white"><br/>
+<img src="https://img.shields.io/badge/Styling-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"><br/>
+<img src="https://img.shields.io/badge/Interface-Web%20Serial%20API-4285F4?style=flat-square&logo=googlechrome&logoColor=white">
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://img.shields.io/badge/HARDWARE-COMPONENTS-14B8A6?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<img src="https://img.shields.io/badge/MCU-ESP32--WROOM--32-E7352C?style=flat-square&logo=espressif&logoColor=white"><br/>
+<img src="https://img.shields.io/badge/Sensor-MPU6050-14B8A6?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Mux-TCA9548A-0EA5E9?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Excitation-Bone--Conduction%20Transducer-8B5CF6?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Amplifier-PAM8403-22C55E?style=flat-square&labelColor=0B1220">
+</td>
+</tr>
+<tr>
+<td colspan="2" width="66%" valign="top" align="center">
+<img src="https://img.shields.io/badge/SOFTWARE-MODULES-8B5CF6?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<img src="https://img.shields.io/badge/Live%20Monitoring-22D3EE?style=flat-square&labelColor=0B1220">
+<img src="https://img.shields.io/badge/Signal%20Processing-8B5CF6?style=flat-square&labelColor=0B1220">
+<img src="https://img.shields.io/badge/Frequency%20Analysis-2563EB?style=flat-square&labelColor=0B1220">
+<img src="https://img.shields.io/badge/Sensor%20Comparison-14B8A6?style=flat-square&labelColor=0B1220">
+<img src="https://img.shields.io/badge/Reporting-22C55E?style=flat-square&labelColor=0B1220">
+</td>
+<td width="33%" valign="top" align="center">
+<img src="https://img.shields.io/badge/EXPERIMENTAL-CAPABILITIES-22C55E?style=for-the-badge&labelColor=0B1220"><br/><br/>
+<img src="https://img.shields.io/badge/Sampling%20Target-100%20Hz-F97316?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Nyquist-50%20Hz-F97316?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/Analysis%20Methods-11-22C55E?style=flat-square&labelColor=0B1220"><br/>
+<img src="https://img.shields.io/badge/CSV%20Fields-5-8B5CF6?style=flat-square&labelColor=0B1220">
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 💻 Technology Stack
+
+<div align="center">
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white">
+<img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white">
+<img src="https://img.shields.io/badge/Web_Serial_API-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white">
+<img src="https://img.shields.io/badge/Signal_Processing-8B5CF6?style=for-the-badge&logo=wavves&logoColor=white">
+
+</div>
+
+<br/>
+
+## ⚙️ System Architecture
+
+```mermaid
+flowchart TD
+    subgraph HW["🔧 HARDWARE LAYER"]
+        A["🔊 Bone-Conduction Transducer"] --> B["📟 MPU6050 Sensors"]
+        B --> C["🔀 TCA9548A Multiplexer"]
+        C --> D["🧠 ESP32"]
+    end
+    subgraph LINK["🔌 DATA LINK"]
+        E["Serial Communication<br/>115200 baud · CSV"]
+    end
+    subgraph SW["💻 SOFTWARE LAYER"]
+        F["🌐 Web Application"] --> G["📈 Signal Processing"]
+        G --> H["📊 Visualization & Reporting"]
+    end
+    D --> E --> F
+
+    classDef hw fill:#0E7490,stroke:#22D3EE,color:#fff,stroke-width:2px;
+    classDef mcu fill:#0F766E,stroke:#2DD4BF,color:#fff,stroke-width:2px;
+    classDef link fill:#6D28D9,stroke:#A78BFA,color:#fff,stroke-width:2px;
+    classDef sw fill:#1D4ED8,stroke:#60A5FA,color:#fff,stroke-width:2px;
+    classDef out fill:#15803D,stroke:#4ADE80,color:#fff,stroke-width:2px;
+    class A,B,C hw;
+    class D mcu;
+    class E link;
+    class F,G sw;
+    class H out;
+```
+
+<br/>
+
+## 🧮 Mathematical Methods
+
+<div align="center">
+<sub>Standard definitions of the methods included in the software. Inclusion does not imply experimental validation — see <a href="#%EF%B8%8F-limitations--disclaimer">Limitations</a>.</sub>
+</div>
+
+<br/>
+
+<div align="center"><img src="https://img.shields.io/badge/RMS-EFFECTIVE%20ACCELERATION%20MAGNITUDE-22C55E?style=for-the-badge&labelColor=0B1220"></div>
+
+$$a_{\mathrm{RMS}}=\sqrt{\frac{1}{N}\sum_{i=1}^{N}a_i^{2}}$$
+
+<div align="center"><img src="https://img.shields.io/badge/FFT-FREQUENCY%20DOMAIN%20TRANSFORM-2563EB?style=for-the-badge&labelColor=0B1220"></div>
+
+$$X[k]=\sum_{n=0}^{N-1}x[n]\,e^{-j2\pi kn/N},\qquad \Delta f=\frac{f_s}{N},\qquad f_{\mathrm{Nyquist}}=\frac{f_s}{2}$$
+
+<div align="center"><img src="https://img.shields.io/badge/RESONANCE-MECHANICAL%20RESPONSE%20PEAKS-A855F7?style=for-the-badge&labelColor=0B1220"></div>
+
+$$f_r=\arg\max_{f}\,|H(f)|,\qquad Q=\frac{f_r}{\Delta f_{-3\,\mathrm{dB}}}$$
+
+<div align="center"><img src="https://img.shields.io/badge/DAMPING-VIBRATION%20DECAY-14B8A6?style=for-the-badge&labelColor=0B1220"></div>
+
+$$\delta=\frac{1}{n}\ln\frac{x_0}{x_n},\qquad \zeta=\frac{\delta}{\sqrt{4\pi^{2}+\delta^{2}}}$$
+
+<div align="center"><img src="https://img.shields.io/badge/ATTENUATION-INPUT%20%E2%86%92%20OUTPUT%20AMPLITUDE-F97316?style=for-the-badge&labelColor=0B1220"></div>
+
+$$A_{\mathrm{dB}}=20\log_{10}\!\left(\frac{A_{\mathrm{out}}}{A_{\mathrm{in}}}\right)$$
+
+<div align="center"><img src="https://img.shields.io/badge/TRANSFER%20FUNCTION-FREQUENCY--DEPENDENT%20RESPONSE-0EA5E9?style=for-the-badge&labelColor=0B1220"></div>
+
+$$H(f)=\frac{Y(f)}{X(f)}$$
+
+<br/>
+
+## 📍 Hardware Configuration
+
+<div align="center">
+
+| Sensor | Measurement Position | Multiplexer Channel | Device |
+|:---:|:---:|:---:|:---:|
+| 🔵 **S1** | **Left Temporal** | `0` | MPU6050 |
+| 🟣 **S2** | **Right Temporal** | `1` | MPU6050 |
+| 🟢 **S3** | **Frontal Midline** | `2` | MPU6050 |
+
+</div>
+
+<div align="center">
+
+**Serial output** &nbsp;·&nbsp; `115200` baud &nbsp;·&nbsp; CSV
+
+```csv
+timestamp_us,sensor_id,ax_g,ay_g,az_g
+```
+
+</div>
+
+<br/>
+
+## 🖼️ Screenshots
+
+<div align="center">
+<sub>Placeholders — replace each file in <code>assets/screenshots/</code> with a real capture from the running application.</sub>
+</div>
+
+<br/>
+
+<table align="center" width="100%">
+<tr>
+<td width="50%" align="center">
+<img src="./assets/screenshots/live-monitoring.svg" width="100%" alt="Live monitoring"/><br/>
+<sub><b>Live Monitoring</b> · three-axis acceleration</sub>
+</td>
+<td width="50%" align="center">
+<img src="./assets/screenshots/fft-spectrum.svg" width="100%" alt="FFT spectrum"/><br/>
+<sub><b>FFT Spectrum</b> · frequency analysis</sub>
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+<img src="./assets/screenshots/sensor-comparison.svg" width="100%" alt="Sensor comparison"/><br/>
+<sub><b>Sensor Comparison</b> · S1 · S2 · S3</sub>
+</td>
+<td width="50%" align="center">
+<img src="./assets/screenshots/report-view.svg" width="100%" alt="Analysis report"/><br/>
+<sub><b>Analysis Report</b> · experimental summary</sub>
+</td>
+</tr>
+</table>
+
+<br/>
+
+## 🚀 Installation
+
+> **Prerequisites:** Node.js, npm and Git.
+
+```bash
 # 1 · Clone the repository
 git clone https://github.com/Tonyteja369/NeuroSense-X-Software.git
 
@@ -107,67 +303,62 @@ npm install
 
 # 4 · Start the development server
 npm run dev
+```
 
-[!TIP] The Web Serial API is available in Chromium-based browsers such as Chrome and Edge.
-
-<br/>
-🔌 Serial Protocol
-
-The ESP32 streams sensor measurements over serial communication.
-
-Setting	Value
-Baud Rate	115200
-Format	CSV, one sample per line
-csv
-timestamp_us,sensor_id,ax_g,ay_g,az_g
-Field	Description
-timestamp_us	Timestamp in microseconds
-sensor_id	Sensor identification
-ax_g	X-axis acceleration (g)
-ay_g	Y-axis acceleration (g)
-az_g	Z-axis acceleration (g)
-<br/>
-⚠️ Experimental Limitations
-
-[!IMPORTANT] The current prototype uses an MPU6050-based acquisition architecture with a nominal 100 Hz sampling target. At that rate the theoretical Nyquist frequency is 50 Hz.
-
-[!WARNING] High-frequency cranial vibration characterization requires higher-bandwidth sensors, faster synchronized acquisition, suitable calibration and controlled experimental conditions.
-
-[!NOTE] Resonance, damping, attenuation and transfer-function analysis require appropriate experimental measurements. Their inclusion in the software does not imply that these measurements have been experimentally validated.
-
-[!CAUTION] Medical Disclaimer: NeuroSense-X is an experimental biomedical engineering platform. It is not a clinically validated medical device and is not intended for medical diagnosis or treatment.
+> [!TIP]
+> The Web Serial API is available in Chromium-based browsers such as Google Chrome and Microsoft Edge.
 
 <br/>
-🔭 Roadmap
-[ ] Higher-bandwidth vibration acquisition
-[ ] Synchronized multi-channel sensor measurements
-[ ] Calibrated mechanical excitation
-[ ] Advanced frequency-response characterization
-[ ] Experimental damping and attenuation analysis
-[ ] Improved signal-quality assessment
-[ ] Advanced research visualization and reporting
+
+## ⚠️ Limitations & Disclaimer
+
+> [!IMPORTANT]
+> **Sampling & bandwidth.** The prototype uses an MPU6050-based acquisition architecture with a **nominal 100 Hz sampling target**, giving a theoretical **Nyquist frequency of 50 Hz**.
+
+> [!WARNING]
+> High-frequency cranial vibration characterization requires **higher-bandwidth sensors**, **faster synchronized acquisition**, suitable **calibration** and **controlled experimental conditions**.
+
+> [!NOTE]
+> Resonance, damping, attenuation and transfer-function analysis require appropriate experimental measurements. Their inclusion in the software **does not imply** that these measurements have been experimentally validated.
+
+> [!CAUTION]
+> **Medical disclaimer.** NeuroSense-X is an experimental biomedical engineering platform. It is **not clinically validated** and is **not intended for medical diagnosis or treatment**.
+
 <br/>
-📈 Developer Insights
-<div align="center"> <!-- Full dashboard generated by .github/workflows/metrics.yml (see setup notes) --> <img src="./assets/github-metrics.svg" alt="GitHub metrics dashboard" width="100%"/>
 
-<br/><br/>
+## 🔭 Roadmap
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Tonyteja369&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B1220&count_private=true&rank_icon=github" alt="GitHub stats"/> <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonyteja369&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1220" alt="Top languages"/> <img src="https://github-readme-streak-stats.herokuapp.com/?user=Tonyteja369&theme=tokyonight&hide_border=true&background=0B1220" alt="Streak stats"/> <img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonyteja369&theme=tokyo-night&hide_border=true&bg_color=0B1220&area=true" width="100%" alt="Contribution activity graph"/> </div> <br/>
-🧑‍🔬 Ownership & Credits
-Area	Owner
-💡 Concept, research idea & experimental design	Katikireddy Tharun
-🔧 Hardware design, wiring & sensor placement	Katikireddy Tharun
-📟 ESP32 firmware & serial protocol	Katikireddy Tharun
-💻 Web application, UI & signal-processing software	Katikireddy Tharun
-📝 Documentation & project direction	Katikireddy Tharun
+- [ ] Higher-bandwidth vibration acquisition
+- [ ] Synchronized multi-channel sensor measurements
+- [ ] Calibrated mechanical excitation
+- [ ] Advanced frequency-response characterization
+- [ ] Experimental damping and attenuation analysis
+- [ ] Improved signal-quality assessment
+- [ ] Advanced research visualization and reporting
 
-NeuroSense-X is the original work of Katikireddy Tharun — every idea, hardware design and line of software in this project.
+<br/>
 
-<br/> <div align="center"> <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=140&section=footer&text=Engineering%20·%20Measurement%20·%20Signal%20Intelligence&fontSize=20&fontColor=ffffff&fontAlignY=62" width="100%" alt="footer"/>
-NeuroSense-X
+## 📈 Developer Insights
 
-An Experimental Biomedical Instrumentation Initiative
+<div align="center">
 
-© 2026 Katikireddy Tharun · All rights reserved
+<img src="./assets/github-metrics.svg" alt="GitHub metrics dashboard" width="100%"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Tonyteja369&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0B1220&count_private=true" alt="GitHub stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tonyteja369&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1220" alt="Top languages"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Tonyteja369&theme=tokyo-night&hide_border=true&bg_color=0B1220&area=true" width="100%" alt="Contribution activity"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:0B1220,50:0F2A44,100:0B1220&height=2" width="60%"/>
+
+**NeuroSense-X** &nbsp;|&nbsp; **Biomedical Engineering** &nbsp;|&nbsp; **Signal Intelligence**
+
+<sub>© 2026 Katikireddy Tharun · Concept, hardware, firmware and software · All rights reserved</sub>
 
 </div>
