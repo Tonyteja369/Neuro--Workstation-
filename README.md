@@ -1,251 +1,237 @@
-# NeuroSense-X
+<div align="center">
+
+# 🧠 NeuroSense-X
+
 ### AI-Assisted Cranial Mechanical Vibration Analysis Platform
 
-**NeuroSense-X** is an experimental biomedical instrumentation and signal-analysis platform designed to acquire, process, analyse and visualize mechanical vibration measurements across multiple cranial positions.
+**Biomedical Instrumentation · Signal Processing · Mechanical Vibration Analysis**
 
-The platform integrates embedded hardware communication, real-time sensor data acquisition, digital signal processing and interactive visualization to support experimental investigation of cranial mechanical vibration characteristics.
+<img src="https://img.shields.io/badge/Domain-Biomedical%20Engineering-007C91?style=for-the-badge">
+<img src="https://img.shields.io/badge/Platform-Web%20Application-2563EB?style=for-the-badge">
+<img src="https://img.shields.io/badge/Hardware-ESP32-00979D?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Experimental-orange?style=for-the-badge">
+
+</div>
 
 ---
 
-## Project Overview
+## 🔬 About the Project
 
-NeuroSense-X aims to provide an integrated environment for studying mechanical vibration measurements using MEMS accelerometers positioned at multiple cranial locations.
+NeuroSense-X is an experimental biomedical instrumentation and signal-analysis platform designed to acquire, process, analyse and visualize mechanical vibration measurements across multiple cranial positions.
 
-The software is designed to support:
+It integrates embedded hardware communication, multi-sensor data acquisition, digital signal processing and interactive visualization.
 
-- Real-time sensor data acquisition.
-- Multi-sensor monitoring.
-- Three-axis acceleration visualization.
-- RMS-based signal analysis.
-- FFT-based frequency analysis.
-- Signal preprocessing and filtering.
-- Comparative sensor analysis.
-- Experimental data visualization.
-- Report generation.
+---
 
-## System Architecture
+## ✨ Core Features
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🔵 Hardware Connectivity</h3>
+ESP32 integration, MEMS sensor communication and serial data acquisition.
+
+</td>
+<td width="50%" valign="top">
+
+<h3>🟢 Live Monitoring</h3>
+Real-time three-axis acceleration measurements and sensor visualization.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🟣 Signal Processing</h3>
+Baseline removal, filtering, RMS calculations and FFT analysis.
+
+</td>
+<td width="50%" valign="top">
+
+<h3>🟠 Frequency Analysis</h3>
+Frequency spectrum visualization and experimental resonance analysis.
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+<h3>🔴 Sensor Comparison</h3>
+Comparative acceleration analysis across multiple measurement positions.
+
+</td>
+<td width="50%" valign="top">
+
+<h3>⚫ Reporting</h3>
+Experimental data visualization, analysis summaries and reporting.
+
+</td>
+</tr>
+</table>
+
+---
+
+## ⚙️ System Architecture
 
 ```text
 Bone-Conduction Transducer
-          |
-          v
+          ↓
 Mechanical Excitation
-          |
-          v
+          ↓
 MEMS Accelerometer Sensors
-          |
-          v
+          ↓
 TCA9548A I2C Multiplexer
-          |
-          v
+          ↓
 ESP32 Microcontroller
-          |
-          v
-Serial Data Communication
-          |
-          v
-NeuroSense-X Web Platform
-          |
-          v
+          ↓
+Serial Communication
+          ↓
+NeuroSense-X Web Application
+          ↓
 Signal Processing & Analysis
-          |
-          v
+          ↓
 Visualization & Reporting
 ```
 
-## Key Features
+## 🔧 Hardware Components
 
-### 1. Overview Dashboard
-Provides a centralized interface for accessing system modules, experimental status and measurement summaries.
-
-### 2. Hardware Connectivity
-Supports serial communication with the ESP32-based acquisition system through the Web Serial API.
-
-### 3. Live Monitoring
-Designed to display real-time three-axis acceleration measurements and sensor information.
-
-### 4. Experiment Management
-Provides an interface for organizing experimental sessions and measurement datasets.
-
-### 5. Signal Processing Laboratory
-Provides tools for signal preprocessing, baseline removal, filtering and frequency-domain analysis.
-
-### 6. RMS Analysis
-Calculates Root Mean Square values to quantify the effective magnitude of acquired acceleration signals.
-
-### 7. FFT Analysis
-Uses Fast Fourier Transform methods to investigate frequency components in acquired signals.
-
-### 8. Resonance Analysis
-Provides an experimental analysis interface for investigating frequency-dependent mechanical responses.
-
-### 9. Mechanical Resonance Mapping
-Visualizes comparative measurements across defined cranial sensor positions.
-
-### 10. Sensor Comparison
-Supports comparison of measurements from multiple sensor locations.
-
-### 11. Reporting
-Provides an interface for presenting experimental measurements, analysis results and visualizations.
-
-### 12. Diagnostics and Calibration
-Supports system diagnostics, measurement-quality checks and calibration-related workflows.
-
----
-
-## Hardware Integration
-
-The current prototype architecture includes:
-
-| Component | Purpose |
+| Component | Function |
 |---|---|
-| ESP32-WROOM-32 | Microcontroller and data acquisition |
+| ESP32-WROOM-32 | Microcontroller |
 | MPU6050 | Three-axis accelerometer and gyroscope |
-| TCA9548A | I2C sensor multiplexing |
-| Bone-Conduction Transducer | Mechanical vibration excitation |
+| TCA9548A | I2C multiplexer |
+| Bone-Conduction Transducer | Mechanical excitation |
 | PAM8403 | Audio amplification |
 
 ### Sensor Configuration
 
-| Sensor | Measurement Position | I2C Channel |
+| Sensor | Measurement Position | Channel |
 |---|---|---|
 | S1 | Left Temporal | 0 |
 | S2 | Right Temporal | 1 |
 | S3 | Frontal Midline | 2 |
 
-## Signal Processing Methods
+---
 
-The platform's analytical framework includes:
+## 📊 Signal Processing & Mathematical Methods
 
-| Method | Purpose |
+| Method | Application |
 |---|---|
-| Mean | Average signal value |
-| RMS | Effective signal magnitude |
+| RMS | Effective acceleration magnitude |
 | FFT | Frequency-domain transformation |
-| Peak Amplitude | Maximum absolute signal magnitude |
+| Mean | Average signal measurement |
+| Peak Amplitude | Maximum signal magnitude |
 | Peak-to-Peak | Total signal excursion |
-| Filtering | Suppression of unwanted frequency components |
-| Damping Analysis | Investigation of vibration decay |
-| Attenuation Analysis | Comparison of input and output amplitudes |
+| Filtering | Noise and unwanted frequency suppression |
+| Resonance | Investigation of mechanical response peaks |
+| Damping | Vibration decay characterization |
+| Attenuation | Input-output amplitude comparison |
 | Transfer Function | Frequency-dependent input-output relationship |
-
-*Advanced damping, attenuation and transfer-function measurements require appropriate calibrated input/output measurements and suitable acquisition hardware.*
-
----
-
-## Technology Stack
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- shadcn/ui
-- Web Serial API
-- JavaScript-based signal processing
-- IndexedDB for local experimental data storage
+| SNR | Signal quality assessment |
 
 ---
 
-## Installation and Setup
+## 💻 Technology Stack
 
-### Prerequisites
+<div align="center">
 
-- Node.js
-- npm
-- Git
-- A Chromium-based browser supporting Web Serial API for hardware connectivity.
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white">
+<img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+<img src="https://img.shields.io/badge/ESP32-00979D?style=for-the-badge">
+<img src="https://img.shields.io/badge/Web_Serial_API-4285F4?style=for-the-badge">
 
-### Clone Repository
+</div>
+
+---
+
+## 🚀 Installation
+
+**Prerequisites:** Node.js, npm and Git.
+
+**1. Clone the repository**
 
 ```bash
 git clone https://github.com/Tonyteja369/NeuroSense-X-Software.git
 ```
 
-### Navigate to Project
+**2. Navigate to the project**
 
 ```bash
 cd NeuroSense-X-Software
 ```
 
-### Install Dependencies
+**3. Install dependencies**
 
 ```bash
 npm install
 ```
 
-### Start Development Server
+**4. Start development server**
 
 ```bash
 npm run dev
 ```
 
-Open the local development URL displayed in the terminal.
-
 ---
 
-## Data Communication
+## 🔌 Serial Communication
 
-The ESP32 communicates with the web application through serial data transmission.
+The ESP32 transmits sensor measurements through serial communication.
 
-Expected CSV format:
+**Baud Rate:** `115200`
+
+**CSV Data Format:**
 
 ```csv
 timestamp_us,sensor_id,ax_g,ay_g,az_g
 ```
 
-Where:
-
-- `timestamp_us`: Measurement timestamp in microseconds.
-- `sensor_id`: Sensor identification number.
-- `ax_g`: X-axis acceleration.
-- `ay_g`: Y-axis acceleration.
-- `az_g`: Z-axis acceleration.
-
-Serial baud rate: `115200`
+| Parameter | Description |
+|---|---|
+| timestamp_us | Timestamp in microseconds |
+| sensor_id | Sensor identification |
+| ax_g | X-axis acceleration |
+| ay_g | Y-axis acceleration |
+| az_g | Z-axis acceleration |
 
 ---
 
-## Experimental Limitations
+## ⚠️ Experimental Limitations
 
-NeuroSense-X is currently an experimental biomedical instrumentation and signal-analysis platform.
+> [!IMPORTANT]
+> The current prototype uses an MPU6050-based acquisition architecture with a nominal 100 Hz sampling target. Its theoretical Nyquist frequency at that sampling rate is 50 Hz.
 
-Important considerations:
+> [!WARNING]
+> High-frequency cranial vibration characterization requires higher-bandwidth sensors, faster synchronized acquisition, suitable calibration and controlled experimental conditions.
 
-- The MPU6050 acquisition configuration has a nominal sampling target of 100 Hz.
-- The theoretical Nyquist frequency at 100 Hz sampling is 50 Hz.
-- The three sensors are read sequentially through the I2C multiplexer.
-- High-frequency vibration characterization requires higher-bandwidth sensors and faster acquisition hardware.
-- Accurate attenuation analysis requires calibrated mechanical input measurements.
-- Damping analysis requires suitable vibration-decay measurements.
-- Experimental results require controlled conditions and validation.
+> [!NOTE]
+> Resonance, damping, attenuation and transfer-function analysis require appropriate experimental measurements. Their inclusion in the software does not imply that these measurements have been experimentally validated.
 
-**NeuroSense-X is not a clinically validated medical device and is not intended for diagnosis or treatment of medical conditions.**
+**Medical Disclaimer:** NeuroSense-X is an experimental biomedical engineering platform. It is not a clinically validated medical device and is not intended for medical diagnosis or treatment.
 
 ---
 
-## Future Development
+## 🔭 Future Development
 
 - Higher-bandwidth vibration acquisition.
-- Synchronized multi-channel measurements.
+- Synchronized multi-channel sensor measurements.
 - Calibrated mechanical excitation.
-- Advanced frequency-response analysis.
-- Experimental damping characterization.
-- Frequency-dependent attenuation analysis.
+- Advanced frequency-response characterization.
+- Experimental damping and attenuation analysis.
 - Improved signal-quality assessment.
-- Research-oriented data export and visualization.
+- Advanced research visualization and reporting.
 
 ---
 
-## Project Information
+<div align="center">
 
-**Project:** NeuroSense-X  
-**Domain:** Biomedical Engineering | Biomedical Instrumentation | Signal Processing  
-**Platform:** Web-Based Experimental Analysis System  
-**Hardware:** ESP32 and MEMS Accelerometers  
-**Repository:** NeuroSense-X Software
+### NeuroSense-X
 
----
+**Engineering · Measurement · Signal Intelligence**
 
-## Disclaimer
+*An Experimental Biomedical Instrumentation Initiative*
 
-This project is intended for educational, experimental and research-development purposes. Measurements and analytical outputs should not be interpreted as clinical findings or diagnostic results.
+</div>
